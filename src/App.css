@@ -1,31 +1,132 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-dashboard {
+  background-color: #EEEDF3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #242075;
 }
 
-.App-link {
-  color: #61dafb;
+.App-container{
+  background-image: linear-gradient(315deg, #242075 70%, #00a1ba 100%);
+  width: 100vw;
+  height: 100%;
+  padding: 20px;
+}
+
+.App-name{
+  color: #00ffef;
+}
+.row{
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.row-gallery{
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.row-gallery img{
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+}
+.column-left{
+  flex: 1;
+  padding: 20px;
+}
+.column-right{
+  flex: 1;
+  padding: 20px;
+}
+.form-control{
+  width: 100%;
+  margin: 20px auto;
+  background-color: #b0a9c8;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bgWhite{
+  background-color: #fff !important;
+}
+.ic .input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background:  transparent;
+  color: #242075;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 3px solid #242075;
+  margin-top: 10px;
+}
+.form-input{
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #242075;
+}
+select{
+  border-bottom: 3px solid #242075;
+}
+.input, select{
+  width: 100%;
+  height: 40px;
+  background:  transparent;
+  color: #242075;
+  font-weight: bold;
+  border: none;
+  outline: 0;
+  margin-top: 10px;
+}
+.form-submit{
+  padding: 5px 20px;
+  font-size: 20px;
+  color:  #00ffef;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #242075 0%, #006694 100%);
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #242075;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #242075;
+}
+
+::placeholder {
+  color: #242075;
+}
+.icon {
+    font-size: 16px;
+    padding: 0px 10px;
+    color: #242075;
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes App-logo-spin {
